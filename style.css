@@ -1,0 +1,286 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.mynavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 18px;
+    background-color: #003366;
+}
+.logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.nav_link {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+}
+.nav_link li {
+    margin-left: 1.5rem;
+}
+.nav_link a, .reg a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.17rem;
+    position: relative;
+    transition: color 0.3s;
+}
+.reg a {
+    padding: 5px;
+    border-radius: 8px;
+    background: none;
+    color: white !important;
+    cursor: pointer;
+}
+.reg a:hover {
+    color: orangered !important;
+}
+.nav_link a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+.nav_link a:hover::after {
+    width: 100%;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1.5rem;
+}
+.hamburger span {
+    display: block;
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: #fff;
+    transition: 0.3s;
+}
+header {
+    padding: 15px 0px;
+    border-bottom: 2px solid #8b8a8b;
+}
+header h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+/* login page */
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+.login-container h2, .signin-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.img-form-group {
+    margin: 1rem 0px;
+    display: flex;
+    gap: 10px;
+}
+.img-form-group input {
+    width: 100%;
+    /* padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px; */
+    font-size: 1rem;
+    text-align: center;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #555;
+}
+.form-group input {
+    width: 100%;
+    padding: 0.55rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-group input:focus {
+    border-color: #6e8efb;
+    outline: none;
+}
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #6e8efb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.login-button:hover {
+    background: #5a76e3;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 1rem;
+}
+.forgot-password p {
+    margin-bottom: 6px;
+    align-content: center;
+}
+.forgot-password p a {
+    margin-left: 5px;
+    font-size: 0.95rem;
+}
+.forgot-password a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* signin page */
+
+.signin-container {
+    background: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+.signin-container h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+.signin-container .form-group {
+    margin-bottom: 0.5rem;
+}
+.signin-container .form-group input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-group select {
+    width: 100%;
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+.single {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.single .form-group {
+    width: 50%;
+}
+
+/* Home Section */
+
+.home-header {
+    padding: 20px 0px;
+    align-content: center;
+    color: #2c992c;
+    border-bottom: 2px solid #038803;
+}
+.home-header h2 {
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.home-section {
+    height: auto;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 2px;
+}
+.parties {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.party {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    border: 2px solid gray;
+    margin: 8px 0px;
+    padding: 11px;
+}
+.party-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    height: 100%;
+    width: 83%;
+}
+.party-info p {
+    margin-bottom: 0px;
+}
+.party-info .notvoted {
+    width: 11%;
+    padding: 5px;
+    background-color: #2e9ea6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.party-info .notvoted:hover {
+    transform: scale(1.03);
+    background-color: #2f8288;
+}
+.party-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 17%;
+}
+.party-logo img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.showerror {
+    border: 2px solid red;
+    color: red;
+}
+.showsuccess {
+    border: 2px solid green;
+}
